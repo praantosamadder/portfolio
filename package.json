@@ -1,0 +1,19 @@
+{
+  "name": "port",
+  "version": "1.0.0",
+  "description": "None needed",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Praanto Samadder",
+  "license": "ISC",
+  "dependencies": {
+    "xterm": "^4.8.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "s"
+  }
+}

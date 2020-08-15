@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="node_modules/xterm/css/xterm.css">
+    <script src="node_modules/xterm/lib/xterm.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xterm/3.14.5/xterm.min.js"></script>
+    <title>
+        Port Demo
+    </title>
+</head>
+<body>
+<div id="terminal"></div>
+<script>
+    // import {Terminal} from "xterm";
+
+    let terminal = new Terminal()
+    let curr_line = "";
+    terminal.open(document.getElementById("terminal"))
+    terminal.writeln("$")
+
+    terminal.on("key", function (key, ev) {
+        curr_line += key;
+        terminal.write(key);
+    })
+
+</script>
+</body>
+</html>
